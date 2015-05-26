@@ -72,8 +72,7 @@ class ViewController: UIViewController
                                                               attribute: .Height,
                                                              multiplier: newImage.aspectRatio,
                                                                constant: 0)
-                }
-                else {
+                } else {
                     logoAspectRatioConstraint = nil
                 }
             }
@@ -99,8 +98,7 @@ extension User
     var image: UIImage? {
         if let image = UIImage(named: login) {
             return image
-        }
-        else {
+        } else {
             return UIImage(named: "unknown_user")
         }
     }

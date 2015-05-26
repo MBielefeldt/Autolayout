@@ -64,9 +64,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01o-M9-46X">
                                 <rect key="frame" x="409" y="104" width="175" height="30"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" image="stanford" translatesAutoresizingMaskIntoConstraints="NO" id="6on-8s-NWQ">
-                                <rect key="frame" x="16" y="142" width="485.5" height="450"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="800" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODL-em-Tag">
                                 <rect key="frame" x="509" y="346" width="74.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -79,9 +76,15 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" image="stanford" translatesAutoresizingMaskIntoConstraints="NO" id="6on-8s-NWQ">
+                                <rect key="frame" x="16" y="142" width="485.5" height="450"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6on-8s-NWQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="d10-kV-9ti" secondAttribute="bottom" constant="-9" id="00i-MF-otL">
+                                <variation key="heightClass=regular" constant="8" symbolic="YES"/>
+                            </constraint>
                             <constraint firstItem="L7J-Hv-2Mw" firstAttribute="leading" secondItem="xVt-MA-hGP" secondAttribute="trailing" constant="8" symbolic="YES" id="0sh-q9-uCE"/>
                             <constraint firstItem="d10-kV-9ti" firstAttribute="bottom" secondItem="01o-M9-46X" secondAttribute="bottom" id="17U-HA-iNO"/>
                             <constraint firstItem="dTc-13-1b9" firstAttribute="top" secondItem="ODL-em-Tag" secondAttribute="bottom" constant="8" symbolic="YES" id="1sQ-S9-l7Y"/>
@@ -89,14 +92,21 @@
                             <constraint firstItem="L7J-Hv-2Mw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="6CJ-iD-x0F"/>
                             <constraint firstItem="bII-YZ-ORG" firstAttribute="leading" secondItem="3aH-8E-1jS" secondAttribute="trailing" constant="8" symbolic="YES" id="6v7-r7-s53"/>
                             <constraint firstItem="ODL-em-Tag" firstAttribute="leading" secondItem="dTc-13-1b9" secondAttribute="leading" id="7Rm-Vk-SVS"/>
+                            <constraint firstItem="ODL-em-Tag" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="8aQ-bV-UuM"/>
                             <constraint firstItem="bF6-sn-Wkl" firstAttribute="top" secondItem="aqF-zs-eDe" secondAttribute="top" id="98t-sG-471"/>
                             <constraint firstItem="bII-YZ-ORG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="CIz-sZ-tgT"/>
                             <constraint firstItem="ODL-em-Tag" firstAttribute="bottom" secondItem="6on-8s-NWQ" secondAttribute="centerY" id="COk-PT-9F3"/>
+                            <constraint firstItem="dTc-13-1b9" firstAttribute="top" secondItem="ODL-em-Tag" secondAttribute="bottom" constant="8.5" id="GoJ-9R-eE8">
+                                <variation key="heightClass=regular" constant="8" symbolic="YES"/>
+                            </constraint>
                             <constraint firstItem="3aH-8E-1jS" firstAttribute="baseline" secondItem="bII-YZ-ORG" secondAttribute="baseline" id="H4H-UD-Vx8"/>
                             <constraint firstItem="01o-M9-46X" firstAttribute="width" secondItem="aqF-zs-eDe" secondAttribute="width" id="HFs-aF-m88"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6on-8s-NWQ" secondAttribute="bottom" constant="8" symbolic="YES" id="Ipf-H9-yGI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dTc-13-1b9" secondAttribute="bottom" constant="34.5" id="JsW-FQ-nyt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dTc-13-1b9" secondAttribute="trailing" id="KKf-qJ-6M1"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dTc-13-1b9" secondAttribute="bottom" constant="28.5" id="KY6-LI-gxI">
+                                <variation key="heightClass=regular" constant="8" symbolic="YES"/>
+                            </constraint>
                             <constraint firstItem="d10-kV-9ti" firstAttribute="top" secondItem="L7J-Hv-2Mw" secondAttribute="bottom" constant="8" symbolic="YES" id="N8o-AS-v2v"/>
                             <constraint firstItem="dTc-13-1b9" firstAttribute="top" secondItem="ODL-em-Tag" secondAttribute="bottom" constant="8.5" id="OJf-vk-LmY"/>
                             <constraint firstItem="bF6-sn-Wkl" firstAttribute="bottom" secondItem="aqF-zs-eDe" secondAttribute="bottom" id="Qme-IE-PVf"/>
@@ -110,6 +120,11 @@
                             <constraint firstItem="bII-YZ-ORG" firstAttribute="top" secondItem="3aH-8E-1jS" secondAttribute="bottom" constant="-24" id="cc2-Gw-rXq"/>
                             <constraint firstItem="bII-YZ-ORG" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dBC-rU-PJ3"/>
                             <constraint firstItem="ODL-em-Tag" firstAttribute="leading" secondItem="6on-8s-NWQ" secondAttribute="trailing" constant="8" symbolic="YES" id="dHp-lp-7On"/>
+                            <constraint firstItem="ODL-em-Tag" firstAttribute="top" secondItem="6on-8s-NWQ" secondAttribute="bottom" constant="8" id="ea7-yV-Vcm">
+                                <variation key="heightClass=regular" constant="8" symbolic="YES"/>
+                            </constraint>
+                            <constraint firstItem="dTc-13-1b9" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="h06-8t-n7K"/>
+                            <constraint firstItem="dTc-13-1b9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="iYK-Eb-036"/>
                             <constraint firstItem="L7J-Hv-2Mw" firstAttribute="top" secondItem="bII-YZ-ORG" secondAttribute="bottom" constant="8" symbolic="YES" id="kvV-Vn-b3M"/>
                             <constraint firstItem="3aH-8E-1jS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="mrg-sn-bSY"/>
                             <constraint firstItem="aqF-zs-eDe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="qut-dV-UP9"/>
@@ -117,16 +132,49 @@
                             <constraint firstAttribute="trailingMargin" secondItem="ODL-em-Tag" secondAttribute="trailing" constant="33.5" id="sGS-JZ-mWD"/>
                             <constraint firstItem="d10-kV-9ti" firstAttribute="baseline" secondItem="bF6-sn-Wkl" secondAttribute="baseline" id="sKz-WR-ycJ"/>
                             <constraint firstItem="01o-M9-46X" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xNZ-li-PqE"/>
+                            <constraint firstItem="ODL-em-Tag" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xYy-al-JWz"/>
+                            <constraint firstItem="6on-8s-NWQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="yj0-hA-qSd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dTc-13-1b9" secondAttribute="trailing" constant="19.5" id="z7r-oj-A89"/>
                             <constraint firstItem="6on-8s-NWQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="zCR-S4-A6Z"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="cc2-Gw-rXq"/>
-                                <exclude reference="JsW-FQ-nyt"/>
+                                <exclude reference="00i-MF-otL"/>
+                                <exclude reference="yj0-hA-qSd"/>
+                                <exclude reference="8aQ-bV-UuM"/>
+                                <exclude reference="ea7-yV-Vcm"/>
                                 <exclude reference="sGS-JZ-mWD"/>
+                                <exclude reference="xYy-al-JWz"/>
+                                <exclude reference="GoJ-9R-eE8"/>
                                 <exclude reference="OJf-vk-LmY"/>
+                                <exclude reference="h06-8t-n7K"/>
+                                <exclude reference="iYK-Eb-036"/>
                                 <exclude reference="z7r-oj-A89"/>
+                                <exclude reference="JsW-FQ-nyt"/>
+                                <exclude reference="KY6-LI-gxI"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="00i-MF-otL"/>
+                                <exclude reference="XMr-qU-Za2"/>
+                                <include reference="yj0-hA-qSd"/>
+                                <exclude reference="zCR-S4-A6Z"/>
+                                <exclude reference="5KY-1I-LxQ"/>
+                                <exclude reference="7Rm-Vk-SVS"/>
+                                <include reference="8aQ-bV-UuM"/>
+                                <exclude reference="COk-PT-9F3"/>
+                                <exclude reference="dHp-lp-7On"/>
+                                <include reference="ea7-yV-Vcm"/>
+                                <include reference="xYy-al-JWz"/>
+                                <exclude reference="1sQ-S9-l7Y"/>
+                                <include reference="GoJ-9R-eE8"/>
+                                <exclude reference="KKf-qJ-6M1"/>
+                                <include reference="h06-8t-n7K"/>
+                                <include reference="iYK-Eb-036"/>
+                                <exclude reference="Ipf-H9-yGI"/>
+                                <include reference="KY6-LI-gxI"/>
                             </mask>
                         </variation>
                     </view>
@@ -141,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="416" y="335"/>
+            <point key="canvasLocation" x="416" y="334.5"/>
         </scene>
     </scenes>
     <resources>
