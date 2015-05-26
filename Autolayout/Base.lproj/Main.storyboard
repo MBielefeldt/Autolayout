@@ -64,17 +64,17 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="01o-M9-46X">
                                 <rect key="frame" x="409" y="104" width="175" height="30"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="stanford" translatesAutoresizingMaskIntoConstraints="NO" id="6on-8s-NWQ">
-                                <rect key="frame" x="16" y="142" width="485.5" height="450"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" image="stanford" translatesAutoresizingMaskIntoConstraints="NO" id="6on-8s-NWQ">
+                                <rect key="frame" x="16" y="142" width="486" height="450"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODL-em-Tag">
-                                <rect key="frame" x="509.5" y="346.5" width="74.5" height="20.5"/>
+                                <rect key="frame" x="509.5" y="346" width="74.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTc-13-1b9">
-                                <rect key="frame" x="509.5" y="375.5" width="74.5" height="20.5"/>
+                                <rect key="frame" x="509.5" y="375" width="74.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -123,10 +123,10 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="cc2-Gw-rXq"/>
+                                <exclude reference="JsW-FQ-nyt"/>
                                 <exclude reference="sGS-JZ-mWD"/>
                                 <exclude reference="OJf-vk-LmY"/>
                                 <exclude reference="z7r-oj-A89"/>
-                                <exclude reference="JsW-FQ-nyt"/>
                             </mask>
                         </variation>
                     </view>
