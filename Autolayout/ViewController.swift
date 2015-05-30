@@ -28,11 +28,11 @@ class ViewController: UIViewController
     
     private func updateUI()
     {
-        passwordTextField.secureTextEntry = secure
-        passwordLabel.text = secure ? "Secured Password" : "Password"
+        passwordLabel?.text = secure ? "Secured Password" : "Password"
+        passwordTextField?.secureTextEntry = secure
         image = loggedInUser?.image
-        nameLabel.text = loggedInUser?.name
-        companyLabel.text = loggedInUser?.company
+        nameLabel?.text = loggedInUser?.name
+        companyLabel?.text = loggedInUser?.company
     }
     
     var secure = false {
